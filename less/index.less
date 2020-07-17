@@ -1,0 +1,324 @@
+// Is this working?
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h5 , p, blockquote, pre, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 62.5%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+//  rgba(241, 227, 227, 0.925);
+//  rgb(188, 185, 209);
+/*  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/409269/banner-flowers.jpg') top left/cover no-repeat;  */
+
+
+
+
+
+
+
+
+
+.parent {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  /*  main-axis positioning  */
+    //justify-content: space-around;
+    
+  /*  cross-axis positiong  */
+    align-items: left;
+    
+    /*  cross-axis positiong (with wrapping) */
+  /*   align-content: flex-start; */
+    background-color:green;
+    height: 100vh;
+    width: 74vw;
+
+    #numCon{
+       // Alone classes
+   .container-1{
+    //display:flex;
+    //flex-direction:column;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    //justify-self: left;
+  }
+   
+  .two-1-row{
+    
+    width:100%;
+    border: 2px solid black;
+    height:8.5vh;
+    #gate {
+      cursor: pointer;
+     
+      
+    }
+
+    
+    
+
+    .child{
+  
+               
+                padding: 1.6vh 1.6vw;
+                color: white;
+      border: 2px solid red;
+      background-color: green;
+      flex-wrap: wrap;
+      margin:5px;
+      width:100px;
+      height:20px;
+    }
+    .child-3 {
+      display: flex;
+      flex-direction:space-between;
+      align-items:center;
+      justify-content:center;
+    }
+  
+    .red{
+      font-size:1.4rem;
+      background: red;
+      border-radius: 70%;
+      width: 40px;
+      height: 40px;
+    }
+    .black{
+      font-size:1.4rem;
+      background: black;
+      border-radius: 70%;
+      width: 40px;
+      height: 40px;
+    }
+  
+  
+  
+  }// Two-1-row ends
+ 
+
+
+
+  .con12s{
+    display:flex;
+    flex-direction:space-between;
+    justify-items: center;
+  
+    .child-3 {
+      display: flex;
+      flex-direction:space-between;
+      align-items:center;
+      justify-content:center;
+    }
+    .red{
+      background-color:red;
+    }
+    .black{
+      background-color:black;
+    }
+
+  }
+  .bet-rows{
+  
+    width:100%;
+    border: 2px solid purple;
+    height:10vh;
+    .child{
+      font-size:1.5rem;
+      color:white;
+      border: 2px solid red;
+      flex-wrap: wrap;
+      margin:5px;
+      width:35%;
+      height:8vh;
+    }
+  }
+
+
+// The player area
+.playerArea{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  .child{
+    img #ball{
+      
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+      
+    }
+  }
+  
+}
+.score{
+  width:10vw;
+  font-size:2rem;
+  color:white;
+  background-color:black;
+}
+
+.player-row{
+ 
+  width:100%;
+  border: 2px solid purple;
+  height:25vh;
+  .child{
+    //border: 2px solid red;
+    flex-wrap: wrap;
+    margin:1px;
+    width:8vw;
+    height:19vh;
+    button{
+      border:2px solid red;
+    }
+    
+  }
+
+  .chip{
+    display:flex;
+  //flex-direction: space-between;
+    //align-items: center;  
+    background-color: green;
+    //border: 2px solid blue;
+    //display:flex;
+    //justify-content: left;
+    //width: 300px;
+    //height: 200px;
+    //margin: 2px;
+    //background-clip: border-box;
+    //background-image: url("/casinoImages/5chip.png");
+    //shape-outside: circle();
+    //clip-path: circle();
+   
+    img{
+  
+      //margin:2px;
+      width:100%;
+    height: 100%;
+    //margin: 2px;
+    //background-clip: content-box;
+    }
+  }
+
+}
+
+  
+
+    }/// Numcon Ends
+
+   
+
+    
+    .childZero{
+    
+      background-color: blue;
+      border: 2px solid black;
+      //border-top-right-radius: 1rem;
+     // border-top-left-radius: 1rem;
+     // border-bottom-right-radius: 1rem;
+     // border-bottom-left-radius: 1rem;
+      height: 25vh;
+      width: 3vw;
+      padding: 20px;
+      padding-top:60px;
+
+      border-radius:  9rem 0  0  9rem  ;
+      color: white;
+    
+  }
+  .two-1-bet{
+
+    display:flex;
+    flex-direction: column;
+    .child2-1{
+     
+      border:2px solid pink;
+      /// Was in .child2-1 alone is there a difference
+      background-color: lightgreen;
+      border: 2px solid black;
+      height: 8.5vh;
+      width: 4vw;
+      padding: 0.04rem;
+      color: white;
+    }
+  }
+  
+
+  } // Parent ends
+
+body > .parent{
+  display:flex;
+  flex-direction: row;
+  justify-content:  center;
+ // border: 3px solid black;
+  height:100vh;
+  width:100vw;
+
+}
+
+
+  
+ 
+  
+  .grandchild {
+    background-color: lavender;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+  }
+
+
+
+
+
+
+
+
+
+

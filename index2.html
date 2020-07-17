@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>roulette Game em</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script async  src="src/src2.js" ></script>
+</head>
+<body>
+
+
+
+<div class="parent ">
+    <div class="childZero child-3">
+      0
+    </div>
+<!-- Container for numbers bottom 1 and top above 1 are 0 and the 2 to 1 bets-->
+<div id='numCon'>
+    <div class='two-1-row container-1'>
+        <div id="gate"  class="child red child-3 droppable">
+          3
+        </div>
+        <div class="child black child-3 droppable">
+          6
+        </div>
+        
+        <div class="child red child-3 droppable">
+          9
+        </div>
+        <div class="child red child-3 droppable">
+          12
+        </div>
+        <div class="child black child-3">
+          15
+        </div>
+        <div class="child red child-3">
+          18
+        </div>
+        <div class="child red child-3">
+          21
+        </div>
+        <div class="child black child-3">
+          24
+        </div>
+        
+        <div class="child red child-3">
+          27
+        </div>
+        <div class="child red child-3">
+          30
+        </div>
+        <div class="child black child-3">
+          33
+        </div>
+        <div class="child red child-3">
+            36
+          </div>
+</div><!--two-1-row ends-->
+
+<div class='two-1-row container-1'>
+     <div class="child black child-3">
+      2
+    </div>
+    <div class="child red child-3">
+        5
+      </div>
+      <div class="child black child-3">
+        8
+      </div>
+      
+      <div class="child black child-3">
+        11
+      </div>
+      <div class="child red child-3">
+        14
+      </div>
+      <div class="child black child-3">
+        17
+      </div>
+      <div class="child black child-3">
+        20
+      </div>
+      <div class="child red child-3">
+        23
+      </div>
+      <div class="child black child-3">
+        26
+      </div>
+      
+      <div class="child black child-3">
+        29
+      </div>
+      <div class="child red child-3">
+        32
+      </div>
+      <div class="child black child-3">
+        35
+      </div>
+      
+    </div><!--two-1-row ends-->
+
+    <div class='two-1-row container-1'>
+        <div class="child red child-3">
+         1
+       </div>
+       <div class="child black child-3">
+           4
+         </div>
+         <div class="child red child-3">
+           7
+         </div>
+         
+         <div class="child black child-3">
+           10
+         </div>
+         <div class="child black child-3">
+           13
+         </div>
+         <div class="child child-3 red">
+           16
+         </div>
+         <div class="child red child-3">
+           19
+         </div>
+         <div class="child black child-3">
+           22
+         </div>
+         <div class="child red child-3">
+           25
+         </div>
+         
+         <div class="child black child-3">
+           28
+         </div>
+         <div class="child black child-3">
+           31
+         </div>
+         <div class="child red child-3">
+           34
+         </div>
+         
+       </div><!--two-1-row ends-->
+<!--The 3 12s-->
+       <div class='con12s bet-rows'>
+        <div class="child child-3">
+          1st 12s
+        </div>
+        <div class="child child-3">
+          2nd 12s
+        </div>
+        
+        <div class="child child-3">
+          3rd 12s
+        </div>
+        
+    </div><!--3 12s end-->
+
+    <!--The 6 bets-->
+    <div class='con12s bet-rows'>
+        <div class="child child-3">
+          Low
+        </div>
+        <div class="child child-3">
+          Even
+        </div>
+        
+        <div class="child red child-3">
+          Red
+        </div>
+        <div class="child black child-3">
+            Black
+          </div>
+          <div class="child child-3">
+            ODD
+          </div>
+          
+          <div class="child child-3">
+            High
+          </div>
+        
+    </div><!--end 6bets-->
+
+     <!--The player betting-->
+     <div class='playerArea player-row'>
+        <div class="child chip"  value="1"  onclick="oneclick(this)">
+          <img src="assets/1chip.png" id="ball" alt="nochip">
+        </div>
+        <div class="child chip">
+            <img src="assets/chp5.png" id="chip2" value="5" alt="nochip">
+        </div>
+        
+        <div class="child chip">
+            <img src="assets/chip10.png" id="chip3" value="10" alt="nochip" alt="">
+        </div>
+        <div class="child chip">
+            <img src="assets/chip20.png" id="chip4" value="20"  alt="nochip">
+          </div>
+          <div class="child chip">
+            <img src="assets/chip50.png" id="chip5" value="50" alt="nochip">
+          </div>
+          <div class="child chip">
+            <img src="assets/chip50.png" id="chip6" value="100" alt="nochip">
+          </div>
+          <div class="child child-3">
+            <button>Reset-Bets</button>
+          </div>
+          
+          <div class="child child-3">
+            <button>Start</button>
+          </div>
+        
+    </div><!--end player betting-->
+    <!--The player betting-->
+    <div class='playerArea player-row'>
+        
+          <div class="child child-3">
+            <div id="score" class="score">$ </div>
+          </div>
+          
+          <div class="child">
+            <button>Start</button>
+          </div>
+        
+    </div><!--end player betting-->
+
+</div><!--End numcon numbers and bottom are 2 to 1s-->
+<div class='two-1-bet'>
+    <div class="child2-1 child-3">
+      2 - 1
+    </div>
+    <div class="child2-1 child-3">
+        2 - 1
+      </div>
+    
+      <div class="child2-1 child-3">
+        2 - 1
+      </div>
+    </div>
+    
+  </div><!-- End Parent-->
+
+
+      
+</body>
+</html>
